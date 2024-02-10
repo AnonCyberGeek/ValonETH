@@ -1,11 +1,11 @@
 "use client"
-import { useRef } from 'react';
+import React, { useRef } from 'react';
 import Love from './images/love.png'
 import Image from 'next/image'
 import Love2 from './images/love2.png'
 
 export default function Newsletter() {
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const copyContractAddress = () => {
     if (inputRef.current) {

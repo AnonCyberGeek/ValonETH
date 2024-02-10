@@ -29,7 +29,7 @@ export default function Header() {
 
           {/* Site branding */}
           <div className="shrink-0 mr-4">
-            <Image src={Logo} className='w-[50px] rounded-lg' />
+            <Image src={Logo} className='w-[50px] rounded-lg' alt=''/>
           </div>
 
           {/* Desktop navigation */}
