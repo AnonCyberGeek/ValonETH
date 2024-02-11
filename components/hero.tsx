@@ -1,10 +1,24 @@
+'use client'
 import VideoThumb from './images/Valentine.png'
 import ModalVideo from '@/components/modal-video'
 import Love from './images/love.png'
 import Image from 'next/image'
 import Love2 from './images/love2.png'
+import SocialFollowModal from './modal';
+import React, { useState } from 'react';
 
 export default function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+
   return (
     <section className="relative bg-black">
 
@@ -51,7 +65,7 @@ export default function Hero() {
                 Would you be my $VAL?</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-[#ef067a] hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Join the Community</a>
+                  <a className="btn text-white bg-[#ef067a] hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" onClick={openModal}>Join the Community</a>
                 </div>
                 <div>
                   <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Buy $VAL</a>
@@ -59,7 +73,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-
+          <SocialFollowModal isOpen={isModalOpen} onRequestClose={closeModal} />
           {/* Hero image */}
           <ModalVideo
             thumb={VideoThumb}

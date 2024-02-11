@@ -12,8 +12,12 @@ export const metadata = {
 import Link from 'next/link'
 
 export default function SignIn() {
-  const tweetText = "It's love season, and I'll be getting airdropped $Val @Val_On_ETH for Valentine. Visit https://myval.xyz/airdrop to get your $Val gift now";
-  const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
+  // Define the tweet text with spaces
+  const tweetText = "It's love season, and I'll be getting airdropped $VAL @Val_On_ETH for Valentine.\n\nVisit https://myval.xyz/airdrop to get your $VAL gift now";
+  // Encode the tweet text
+  const encodedTweetText = encodeURIComponent(tweetText);
+  // Construct the Twitter intent URL with the encoded text
+  const tweetUrl = `https://twitter.com/intent/tweet?text=${encodedTweetText}`;
 
   return (
     <><section className="bg-gradient-to-b from-black to-[#ef067a]">
@@ -43,7 +47,7 @@ export default function SignIn() {
             <h1 className="h1 text-white">We have something for you</h1>
           </div>
 
-          
+
 
           {/* Form */}
           <div className="max-w-sm mx-auto">
@@ -56,41 +60,39 @@ export default function SignIn() {
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
-                  
-                    <label className="block text-white text-xl font-medium mb-1" htmlFor="password">Twitter Handle</label>
-                    <input id="password" type="text" className="form-input w-full text-gray-800" placeholder="Enter your Twitter Handle" required />
-                  
-                  
+
+                  <label className="block text-white text-xl font-medium mb-1" htmlFor="password">Twitter Handle</label>
+                  <input id="password" type="text" className="form-input w-full text-gray-800" placeholder="Enter your Twitter Handle" required />
+
+
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
-                 
+
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mt-6">
                 <div className="w-full px-3">
-                  {/* <a
-                    
-                  
-                  > */}
                   <a href={tweetUrl}
                     target="_blank"
-                    rel="noopener noreferrer" className="btn text-white text-xl bg-[#ec4297] hover:bg-[#ef067a] w-full">Share Tweet</a>
-                  {/* </a> */}
+                    rel="noopener noreferrer"
+                  >
+                    <p className="btn text-white text-xl bg-[#ec4297] hover:bg-[#ef067a] w-full">Share Tweet</p>
+                  </a>
                 </div>
               </div>
             </form>
             <div className="max-w-2xl text-white mx-auto p-4">
-            <h2 className="text-2xl font-bold mb-4">Guideline for Airdrop Qualification:</h2>
-            <ul className="list-disc list-inside">
-              <li className="mb-2">Must follow the official social media channels of the project.</li>
-              <li className="mb-2">Must fill in the form to send us your wallet details after you must have completed the task through share button.</li>
-              <li className="mb-2">Must actively engage with the community.</li>
+              <h2 className="text-2xl font-bold mb-4">Guideline for Airdrop Qualification:</h2>
+              <ul className="list-disc list-inside">
+                <li className="mb-2">Must follow the official social media channels of the project.</li>
+                <li className="mb-2">Must fill in the form to send us your wallet details after you must have completed the task through share button.</li>
+                <li className="mb-2">Must actively engage with the community tweet.</li>
 
-              <p className="mb-2">Note - Not doing any of this invalidates your airdrop.</p>
-            </ul>
-          </div>
+                <p className="mb-2">Note - Not doing any of this invalidates your airdrop.</p>
+              </ul>
+            </div>
             {/* <div className="flex items-center my-6">
       <div className="border-t border-gray-300 grow mr-3" aria-hidden="true"></div>
       <div className="text-gray-600 italic">Or</div>
