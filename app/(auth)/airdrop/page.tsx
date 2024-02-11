@@ -24,7 +24,7 @@ export default function SignIn() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
 
-          <div className="static animate-bounce z-[99]">
+          {/* <div className="static animate-bounce z-[99]">
             <Image
               src={Love}
               className="absolute w-[200px] md:w-[500px] animate-spin top-[17rem] left-[5rem]" alt={''} />
@@ -40,7 +40,7 @@ export default function SignIn() {
             <Image
               src={Love}
               className="absolute w-10 animate-spin top-[17rem] right-[7rem]" alt={''} />
-          </div>
+          </div> */}
 
           {/* Page header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
