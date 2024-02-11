@@ -12,7 +12,7 @@ export const metadata = {
 import Link from 'next/link'
 
 export default function SignIn() {
-  const tweetText = "She asked if I could be her $Val, and I said yes. Click here to get a $Val";
+  const tweetText = "It's love season, and I'll be getting airdropped $Val @Val_On_ETH for Valentine. Visit https://myval.xyz/airdrop to get your $Val gift now";
   const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
 
   return (
@@ -56,11 +56,11 @@ export default function SignIn() {
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
-                  <div className="flex justify-between">
+                  
                     <label className="block text-white text-xl font-medium mb-1" htmlFor="password">Twitter Handle</label>
-
-                  </div>
-                  <input id="password" type="text" className="form-input w-full text-gray-800" placeholder="Enter your Twitter Handle" required />
+                    <input id="password" type="text" className="form-input w-full text-gray-800" placeholder="Enter your Twitter Handle" required />
+                  
+                  
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
