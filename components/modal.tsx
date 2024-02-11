@@ -10,7 +10,7 @@ interface SocialFollowModalProps {
 
 const SocialFollowModal: React.FC<SocialFollowModalProps> = ({ isOpen, onRequestClose }) => {
   const openTwitter = () => {
-    window.open('https://twitter.com/VAL_ON_ETH', '_blank');
+    window.open('https://twitter.com/VAL_ON_ETH_', '_blank');
   };
 
   const openWebsite = () => {

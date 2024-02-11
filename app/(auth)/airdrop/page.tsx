@@ -13,7 +13,7 @@ import Link from 'next/link'
 
 export default function SignIn() {
   // Define the tweet text with spaces
-  const tweetText = "It's love season, and I'll be getting airdropped $VAL @Val_On_ETH for Valentine.\n\nVisit https://myval.xyz/airdrop to get your $VAL gift now";
+  const tweetText = "It's love season, and I'll be getting airdropped $VAL @Val_On_ETH_ for Valentine.\n\nVisit https://myval.xyz/airdrop to get your $VAL gift now";
   // Encode the tweet text
   const encodedTweetText = encodeURIComponent(tweetText);
   // Construct the Twitter intent URL with the encoded text
