@@ -36,14 +36,25 @@ export default function SignIn() {
             <Image
               src={Love}
               className="absolute w-10 animate-spin top-[17rem] right-[7rem]" alt={''} />
-
-
           </div>
 
           {/* Page header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h1 className="h1 text-[#ef067a]">We have something for you</h1>
+            <h1 className="h1 text-white">We have something for you</h1>
           </div>
+
+          <div className="max-w-2xl text-white mx-auto p-4">
+      <h2 className="text-2xl font-bold mb-4">Guideline for Airdrop Qualification:</h2>
+      <ul className="list-disc list-inside">
+        <li className="mb-2">Sign up for the airdrop program using the provided registration form.</li>
+        <li className="mb-2">Complete the KYC (Know Your Customer) process if required.</li>
+        <li className="mb-2">Verify your email address.</li>
+        <li className="mb-2">Follow the official social media channels of the project.</li>
+        <li className="mb-2">Engage with the community by participating in discussions and activities.</li>
+        <li className="mb-2">Stay updated with the project's announcements and updates.</li>
+        <li className="mb-2">Adhere to the terms and conditions of the airdrop program.</li>
+      </ul>
+    </div>
 
           {/* Form */}
           <div className="max-w-sm mx-auto">
