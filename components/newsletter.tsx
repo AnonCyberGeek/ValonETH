@@ -15,7 +15,7 @@ export default function Newsletter() {
   };
 
   return (
-    <section>
+    <section id='htb'>
       <div className="max-w-full bg-[#ef067a] py-10 mx-auto px-4 sm:px-6">
         <div className="pb-12 ] md:pb-20">
           {/* CTA box */}

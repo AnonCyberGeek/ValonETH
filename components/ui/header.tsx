@@ -35,10 +35,19 @@ export default function Header() {
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
-            <ul className="flex grow justify-end flex-wrap items-center">
-              <li>
-                <Link href="#" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Buy $VAL</Link>
-              </li>
+            <ul className="flex grow justify-end flex-wrap gap-5 items-center">
+            <li>
+              <Link href="/" className="flex font-medium w-full text-white hover:text-[#ef067a] py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Home</Link>
+            </li>
+            <li>
+              <Link href="/#tokenomics" className="flex font-medium w-full text-white hover:text-[#ef067a] py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Tokenomics</Link>
+            </li>
+            <li>
+              <Link href="/#htb" className="flex font-medium w-full text-white hover:text-[#ef067a] py-2 justify-center" onClick={() => setMobileNavOpen(false)}>How to Buy</Link>
+            </li>
+            <li>
+              <Link href="/airdrop" className="flex font-medium w-full text-white hover:text-[#ef067a] py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Airdrop</Link>
+            </li>
               <li>
                 <Link href="#" className="btn-sm text-gray-200 bg-[#ef067a] hover:bg-gray-800 ml-3">
                   <span>Join Community</span>

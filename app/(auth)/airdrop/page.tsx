@@ -23,16 +23,16 @@ export default function SignIn() {
           <div className="static animate-bounce z-[99]">
             <Image
               src={Love}
-              className="absolute w-[500px] animate-spin top-[17rem] left-[5rem]" alt={''} />
+              className="absolute w-[200px] md:w-[500px] animate-spin top-[17rem] left-[5rem]" alt={''} />
             <Image
               src={Love2}
-              className="absolute w-[200px] animate-bounce top-[8rem] left-[3rem]" alt={''} />
+              className="absolute w-[50px] md:w-[200px] animate-bounce top-[8rem] left-[3rem]" alt={''} />
             <Image
               src={Love2}
-              className="absolute w-5 animate-spin top-[8rem] right-[8rem]" alt={''} />
+              className="absolute w-[50px] md:w-[200px] animate-spin top-[8rem] right-[8rem]" alt={''} />
             <Image
               src={Love}
-              className="absolute w-[300px] animate-spin top-[17rem] right-[5rem]" alt={''} />
+              className="absolute w-[300px] md:w-[200px] animate-spin top-[17rem] right-[5rem]" alt={''} />
             <Image
               src={Love}
               className="absolute w-10 animate-spin top-[17rem] right-[7rem]" alt={''} />
@@ -43,18 +43,7 @@ export default function SignIn() {
             <h1 className="h1 text-white">We have something for you</h1>
           </div>
 
-          <div className="max-w-2xl text-white mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-4">Guideline for Airdrop Qualification:</h2>
-      <ul className="list-disc list-inside">
-        <li className="mb-2">Sign up for the airdrop program using the provided registration form.</li>
-        <li className="mb-2">Complete the KYC (Know Your Customer) process if required.</li>
-        <li className="mb-2">Verify your email address.</li>
-        <li className="mb-2">Follow the official social media channels of the project.</li>
-        <li className="mb-2">Engage with the community by participating in discussions and activities.</li>
-        <li className="mb-2">Stay updated with the project's announcements and updates.</li>
-        <li className="mb-2">Adhere to the terms and conditions of the airdrop program.</li>
-      </ul>
-    </div>
+          
 
           {/* Form */}
           <div className="max-w-sm mx-auto">
@@ -76,12 +65,7 @@ export default function SignIn() {
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
-                  {/* <div className="flex justify-between">
-      <label className="flex items-center">
-        <input type="checkbox" className="form-checkbox" />
-        <span className="text-gray-600 ml-2">Keep me signed in</span>
-      </label>
-    </div> */}
+                 
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mt-6">
@@ -90,13 +74,23 @@ export default function SignIn() {
                     
                   
                   > */}
-                    <a href={tweetUrl}
+                  <a href={tweetUrl}
                     target="_blank"
                     rel="noopener noreferrer" className="btn text-white text-xl bg-[#ec4297] hover:bg-[#ef067a] w-full">Share Tweet</a>
                   {/* </a> */}
                 </div>
               </div>
             </form>
+            <div className="max-w-2xl text-white mx-auto p-4">
+            <h2 className="text-2xl font-bold mb-4">Guideline for Airdrop Qualification:</h2>
+            <ul className="list-disc list-inside">
+              <li className="mb-2">Must follow the official social media channels of the project.</li>
+              <li className="mb-2">Must fill in the form to send us your wallet details after you must have completed the task with the share button.</li>
+              <li className="mb-2">Must actively engage with the community.</li>
+
+              <p className="mb-2">Note - Not doing any of this invalidates your airdrop.</p>
+            </ul>
+          </div>
             {/* <div className="flex items-center my-6">
       <div className="border-t border-gray-300 grow mr-3" aria-hidden="true"></div>
       <div className="text-gray-600 italic">Or</div>
