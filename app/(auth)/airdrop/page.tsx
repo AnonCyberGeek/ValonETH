@@ -85,7 +85,7 @@ export default function SignIn() {
             <h2 className="text-2xl font-bold mb-4">Guideline for Airdrop Qualification:</h2>
             <ul className="list-disc list-inside">
               <li className="mb-2">Must follow the official social media channels of the project.</li>
-              <li className="mb-2">Must fill in the form to send us your wallet details after you must have completed the task with the share button.</li>
+              <li className="mb-2">Must fill in the form to send us your wallet details after you must have completed the task through share button.</li>
               <li className="mb-2">Must actively engage with the community.</li>
 
               <p className="mb-2">Note - Not doing any of this invalidates your airdrop.</p>

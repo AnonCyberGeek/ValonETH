@@ -37,16 +37,16 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap gap-5 items-center">
             <li>
-              <Link href="/" className="flex font-medium w-full text-white hover:text-[#ef067a] py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Home</Link>
+              <Link href="/" className="flex font-medium w-full text-white hover:text-[#ef067a] py-2 justify-center" >Home</Link>
             </li>
             <li>
-              <Link href="/#tokenomics" className="flex font-medium w-full text-white hover:text-[#ef067a] py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Tokenomics</Link>
+              <Link href="/#tokenomics" className="flex font-medium w-full text-white hover:text-[#ef067a] py-2 justify-center" >Tokenomics</Link>
             </li>
             <li>
-              <Link href="/#htb" className="flex font-medium w-full text-white hover:text-[#ef067a] py-2 justify-center" onClick={() => setMobileNavOpen(false)}>How to Buy</Link>
+              <Link href="/#htb" className="flex font-medium w-full text-white hover:text-[#ef067a] py-2 justify-center" >How to Buy</Link>
             </li>
             <li>
-              <Link href="/airdrop" className="flex font-medium w-full text-white hover:text-[#ef067a] py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Airdrop</Link>
+              <Link href="/airdrop" className="flex font-medium w-full text-white hover:text-[#ef067a] py-2 justify-center" >Airdrop</Link>
             </li>
               <li>
                 <Link href="#" className="btn-sm text-gray-200 bg-[#ef067a] hover:bg-gray-800 ml-3">
