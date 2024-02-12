@@ -41,7 +41,7 @@ export default function Newsletter() {
                       type="text"
                       className="form-input w-[300px] md:w-[700px] appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500"
                       placeholder="Contract address…"
-                      defaultValue="Contract address here" // Provide your contract address here
+                      defaultValue="0x810313f413b9ab5b2cc8e159e2446d6f8fef9099" // Provide your contract address here
                       readOnly
                       aria-label="Contract address"
                     />
